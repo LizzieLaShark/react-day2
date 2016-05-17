@@ -7,7 +7,7 @@ class Counter extends Component {
     }
   render() {
     return (
-      <div onClick={this.setState({this.state.count: + 1 })>
+      <div onClick={ ()=> this.setState({count: this.state.count + 1 }) }>
         <h2>How many Lizards are hiding on the page? {this.state.count} </h2>
       </div>
     )
